@@ -1,8 +1,5 @@
 <?
-
-
-
-echo 'phpのテストです。<br>';
+echo 'php縺ｮ繝�繧ｹ繝医〒縺吶�<br>';
 $dbinfo = parse_url(getenv('DATABASE_URL'));
 $dsn = 'pgsql:host=' . $dbinfo['host'] . ';dbname=' . substr($dbinfo['path'], 1);
 $pdo = new PDO($dsn, $dbinfo['user'], $dbinfo['pass']);
